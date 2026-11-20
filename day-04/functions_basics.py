@@ -1,10 +1,15 @@
 # Day 04 Function for calculation of concentration
 
-def calculate_amount(mass_g):
+def calculate_concentration(mass_g, volume_ml):
     molar_mass = 58.44
-    amount_mol = mass_g / molar_mass
-    return amount_mol
+    volume_l = volume_ml / 1000
+    concentration = mass_g / (molar_mass * volume_l)
+    return concentration
 
-masses = [5.844, 2.922, 11.688]
-for i in masses:
-    print(f"Amount of substance: {calculate_amount(i):.3f} mol")
+
+mass = [5.844, 2.922, 11.688]
+volume = [500, 500, 250]
+iterate = [0, 1, 2]
+
+for i in iterate:
+    print(f"Concentration: {calculate_concentration(mass[i], volume[i]):.3f} mol/L")
