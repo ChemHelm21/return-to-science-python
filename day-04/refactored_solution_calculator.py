@@ -15,4 +15,4 @@ if mass_g < 0:
 elif volume_ml <= 0:
     print("Error: Volume must be greater than zero.")
 else:
-    print(f"Concentrecion: {calculate_concentration(mass_g, volume_ml):.3f} mol/L)")
+    print(f"Concentretion: {calculate_concentration(mass_g, volume_ml):.3f} mol/L)"
