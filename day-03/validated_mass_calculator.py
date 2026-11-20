@@ -2,8 +2,8 @@
 
 molar_mass = 58.44
 
-concentration = float(input("Enter the concentration of NaCl solution mol/L:"))
-volume_ml = float(input("Enter volume (ml):"))
+concentration = float(input("Enter the concentration of NaCl solution mol/L: "))
+volume_ml = float(input("Enter volume (ml): "))
 
 if concentration < 0:
     print("Error: Concentration cannot be zero!")
