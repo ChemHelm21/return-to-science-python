@@ -16,14 +16,14 @@ else:
     print(f"Number of samples: {sample_number}")
 
 
-    # Print the first mass using indexing
-    # Print the last volume using negative indexing
+# Print the first mass using indexing
+# Print the last volume using negative indexing
 
     print(f"First sample mass: {masses_g[0]} g")
     print(f"Last sample volume: {volumes_ml[-1]} mL")
 
 
-    # Use range() to print sample numbers
+# Use range() to print sample numbers
 
     print("Sample numbers:")
     for i in range(1, sample_number + 1):
@@ -35,4 +35,3 @@ else:
     print("Sample data:")
     for mass_g, volume_ml in zip(masses_g, volumes_ml):
         print(f"{mass_g} g - {volume_ml} mL")
-
