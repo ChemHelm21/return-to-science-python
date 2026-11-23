@@ -59,22 +59,25 @@ with open(input_path, "r", encoding="utf-8", newline="") as file:
             print(f"Sample {sample_number}. - {sample['id']}: Volume zero or less.")
 
     print("")
-    print(f"valid samples: {valid_samples}")
-    print("")
 
     # Statistics
     if sample_number == 0:
         print("No samples found in the CSV file.")
 
 
-    if valid_samples > 0:
+    elif valid_samples > 0:
+
+        print("")
+        print(f"valid samples: {valid_samples}")
+
         print(f"Mean concentration: {sum(concentrations) / len(concentrations):.3f} mol/L")
         print(f"Minimum concentration: {min(concentrations):.3f} mol/L")
         print(f"Maximum concentration: {max(concentrations):.3f} mol/L")
+
     else:
         print("No valid samples available for statistical analysis.")
 
-    print("")
+print("")
 
 with open(output_path, "w", encoding="utf-8", newline="") as file:
     writer = csv.DictWriter(file, fieldnames=fieldnames)
