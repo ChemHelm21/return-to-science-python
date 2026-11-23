@@ -36,9 +36,6 @@ with open(input_path, "r", encoding="utf-8", newline="") as file:
 
         sample_number += 1
 
-    if sample_number == 0:
-        print("No samples found in the CSV file.")
-    else:
         if mass_g >= 0 and volume_ml > 0:
 
             concentration = calculate_concentration(mass_g, volume_ml)
