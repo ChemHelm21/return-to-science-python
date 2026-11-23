@@ -17,6 +17,7 @@ concentrations = []
 valid_samples = 0
 sample_number = 0
 results = []
+
 fieldnames = [
     "id",
     "mass_g",
